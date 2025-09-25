@@ -1,0 +1,529 @@
+.app {
+  text-align: center;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Game Stats Styles */
+.game-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.stat-card {
+  width: 220px;
+  padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px) rotate(2deg);
+}
+
+/* Game Library Styles */
+.game-library {
+  margin: 100px 0;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.game-cover {
+  width: 200px;
+  height: 280px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.game-cover:hover {
+  transform: translateY(-20px) rotateY(10deg);
+}
+
+/* Video Highlight Styles */
+.video-highlight {
+  margin: 100px 0;
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.3);
+}
+
+/* Social Panel Styles */
+.social-panel {
+  margin: 100px 0;
+}
+
+.friends-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.friend-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.friend-avatar:hover {
+  transform: scale(1.1);
+}
+
+.online-indicator {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+/* Call to Action Styles */
+.cta-section {
+  margin: 100px 0;
+  padding: 80px 5%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #00f3ff, #0066ff);
+  color: white;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00f3ff;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 40px 5%;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: #00f3ff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  text-shadow: 0 0 10px #00f3ff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #00f3ff;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  text-shadow: 0 0 10px #00f3ff;
+  transform: translateY(-3px);
+}
+
+.copyright {
+  margin-top: 30px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgba(20, 20, 40, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  border: 1px solid #00f3ff;
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.5);
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stat-card {
+    width: 150px;
+    padding: 15px;
+  }
+  
+  .game-cover {
+    width: 150px;
+    height: 220px;
+  }
+  
+  .friend-avatar {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 80%;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}.app {
+  text-align: center;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Game Stats Styles */
+.game-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.stat-card {
+  width: 220px;
+  padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px) rotate(2deg);
+}
+
+/* Game Library Styles */
+.game-library {
+  margin: 100px 0;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.game-cover {
+  width: 200px;
+  height: 280px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.game-cover:hover {
+  transform: translateY(-20px) rotateY(10deg);
+}
+
+/* Video Highlight Styles */
+.video-highlight {
+  margin: 100px 0;
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.3);
+}
+
+/* Social Panel Styles */
+.social-panel {
+  margin: 100px 0;
+}
+
+.friends-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.friend-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.friend-avatar:hover {
+  transform: scale(1.1);
+}
+
+.online-indicator {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+/* Call to Action Styles */
+.cta-section {
+  margin: 100px 0;
+  padding: 80px 5%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #00f3ff, #0066ff);
+  color: white;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00f3ff;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 40px 5%;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: #00f3ff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  text-shadow: 0 0 10px #00f3ff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #00f3ff;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  text-shadow: 0 0 10px #00f3ff;
+  transform: translateY(-3px);
+}
+
+.copyright {
+  margin-top: 30px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgba(20, 20, 40, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  border: 1px solid #00f3ff;
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.5);
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stat-card {
+    width: 150px;
+    padding: 15px;
+  }
+  
+  .game-cover {
+    width: 150px;
+    height: 220px;
+  }
+  
+  .friend-avatar {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 80%;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
